@@ -6,7 +6,6 @@ REQUIEREMENTS:
 HOW TO RUN?
   run main_file.py in terminal / editor
   
-  
 
 IMPORTANT NOTE 1:
 - project is still incomplete. PageRank wont be calculated (yet). 
