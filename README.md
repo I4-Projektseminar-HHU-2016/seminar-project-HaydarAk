@@ -107,9 +107,6 @@ Additionally \~30GB disk space is needed, if running with full Wikipedia DB-dump
 
  
 
-*More ​CPU Cores, RAM & fast Disk will result in an considerable improve of program execution time*
-
- 
 
  
 
@@ -144,6 +141,8 @@ Additionally \~30GB disk space is needed, if running with full Wikipedia DB-dump
     This fully depends on the Editor/IDE you use. Check the Editor/ IDE Documentation for further information.
 
  
+ Note:
+*More ​CPU Cores, RAM & fast Disk will result in an considerable improve of program execution time*
 
 Authors
 -------
