@@ -1,36 +1,169 @@
-REQUIEREMENTS: 
-  - ~30GB disk space, if running with full wikipedia dump.
-  - python 3.5 with following libraries:
-    pickle,glob, sqlite3, psutil, os, errno, time
+Project Title
+=============
 
-HOW TO RUN?
-  run main_file.py in terminal / editor
-  
+Computing english Wikipedia’s internal PageRank
 
-IMPORTANT NOTE 1:
-- project is still incomplete. PageRank wont be calculated (yet). 
-  more information in projekt_dokumentation.pdf, chapter 6. "Reflexion & Fazit"
+Features
+--------
 
-- Delete existing test_db.db file from folder, before running script.
-- script prints, all progress it does, in terminal
-- at the end, the script prints a snippet of the dictionary, it'll use for PageRank.
+-   [x] SQL Dump Reading & Parsing
 
-Missing:
-- PageRank Calculation
-- Visualisation of results
+-   [x] Generate SQLite-Database with parsed Wiki-Articles & Link data
 
-IMPORTANT NOTE 2:
-  the .gz files in project folder are snippts of the the full sql-dumps and can be used for testing.
+-   [ ] Computing PageRank
 
-  full dumps available at  :
-  https://dumps.wikimedia.org/enwiki/20160720/ 
-  
-  Delete the .gz files, then download
-    enwiki-20160720-page.sql.gz  (1.3 GB) 
-    and
-    enwiki-20160720-pagelinks.sql.gz (4.8 GB) 
-    from the link above and put them into projects main folder
-  
-IMPORTANT NOTE 3: 
-  program execution may take > 1h with full dumps.
+-   [ ] visualization of results
 
+Getting Started
+---------------
+
+These instructions will get you a copy of the project up and running on your local machine.
+
+ 
+
+### 1. Prerequisites
+
+Python 3.5 with following libraries:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pickle
+glob 
+sqlite3 
+psutil
+os
+errno
+time
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ 
+
+### 2.1 Download Project:
+
+ 
+
+-   **Download the project, using git:**
+
+1.  Create a folder on your computer, open git bash and type the following, to clone the repository:
+
+2.  *git clone “URL”*
+
+ 
+
+Clone via SSH:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git clone git@github.com:I4-Projektseminar-HHU-2016/seminar-project-HaydarAk.git
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Clone via HTTPS:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git clone https://github.com/I4-Projektseminar-HHU-2016/seminar-project-HaydarAk.git
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ 
+
+More information on how to clone a repository can be found here:
+
+https://git-scm.com/book/it/v2/Git-Basics-Getting-a-Git-Repository
+
+ 
+
+-   **Download Repository ZIP:**
+
+1.  In the web-view of the repository, click on the button\* Clone or Download *in the upper right corner*.\*
+
+2.  Click on *Download as ZIP*
+
+3.  Choose a download location
+
+4.  Start Download & wait until it has finished.
+
+5.  Extract ZIP File
+
+ 
+
+ 
+
+### 2.2 Download full Wikipedia dump (Optional)
+
+Database-Snippet is included in Repository, for testing purposes.
+
+Full DB-Dump can be downloaded here:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+https://dumps.wikimedia.org/enwiki/20160720/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Following files have to be downloaded:
+enwiki-20160720-page.sql.gz  ~1.3 GB
+enwiki-20160720-pagelinks.sql.gz 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ 
+
+Additionally \~30GB disk space is needed, if running with full Wikipedia DB-dump.
+
+ 
+
+*More ​CPU Cores, RAM & fast Disk will result in an considerable improve of program execution time*
+
+ 
+
+ 
+
+### 3. Installing / Running the Code
+
+-   (Optional) *If DB-dump has been downloaded:* Replace the .gz files, with the files, you downloaded before.
+
+ 
+
+-   **A: Running Script in Terminal:**
+
+    Open a terminal window in the folder, where the files are saved in.
+
+    Run *main\_file.py*
+
+    Based on, how your OS & Python-Installation is configured, you should be able to run the Script with one of the following commands:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    python main_file.py
+
+    py -3 main_file.py
+
+    python3 main_file.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ 
+
+-   **B: Running Script in Editor’s / IDE’s**
+
+    There is no *universal* way of how to run the script in different editors / IDEs.
+
+    This fully depends on the Editor/IDE you use. Check the Editor/ IDE Documentation for further information.
+
+ 
+
+Authors
+-------
+
+-   **Haydar Akyürek** - [HaAky](https://github.com/HaAky)
+
+ 
+
+License
+-------
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+ 
+
+Acknowledgments
+---------------
+
+-   \-
+
+ 
+
+*template inspired by* <https://gist.github.com/PurpleBooth/109311bb0361f32d87a2>
